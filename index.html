@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="lib.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <label for="fname">Word</label>
-    <input type="text" id="fname" oninput="clickMe()" name="fname"><br><br>
-    <button id="theButton" onClick="clickMe()">Click me or just start wring in the box</button>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McOrdOrd</title>
+    <script type="text/javascript" src="./lib.js"></script>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <textarea id="input" oninput="multiWord()"></textarea>
+    <p id="output"></p>
+    <footer><a href="./classic/">Classic</a></footer>
+  </body>
 </html>

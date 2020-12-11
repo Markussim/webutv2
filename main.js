@@ -1,5 +1,13 @@
-function clickMe() {
-    const word = document.getElementById("fname").value
+function multiWord() {
+  let words = document.getElementById("input").value;
 
-    document.getElementById("theButton").innerHTML = creatMcWord(word)
+  let wordArray = words.split(" ");
+
+  document.getElementById("output").innerText = "";
+
+  if (document.getElementById("input").value) {
+    wordArray.forEach((element) => {
+      document.getElementById("output").innerText += " " + creatMcWord(element);
+    });
+  }
 }
