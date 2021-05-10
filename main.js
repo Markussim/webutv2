@@ -11,3 +11,7 @@ function multiWord() {
     });
   }
 }
+
+window.onbeforeunload = function() {
+  if(document.getElementById("input").value) return "You have typed a word";
+};
